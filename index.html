@@ -26,15 +26,42 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="m-3">
-    <section class="text-center">
-        <h1>Verifica Palindromo</h1>
-        <form id="formPalindromo" class="m-3">
+<body>
+
+    <section class="text-center border-bottom m-3">
+        <h2>Verifica Palindromo</h2>
+        <form id="formPali" class="m-3">
             <label for="parola">Inserisci una parola:</label>
             <input type="text" id="parola" required>
             <button type="submit">Verifica</button>
         </form>
         <p id="risultato"></p>
+    </section>
+
+
+    <section class="text-center m-3">
+        <h2>Pari e Dispari</h2>
+        <form id="formDispari" class="m-3">
+            <label>Scegli pari o dispari:</label><br>
+            <input type="radio" id="pari" name="scelta" value="pari" checked>
+            <label for="pari">Pari</label><br>
+            <input type="radio" id="dispari" name="scelta" value="dispari">
+            <label for="dispari">Dispari</label><br><br>
+
+            <label>Scegli un numero da 1 a 5:</label><br>
+            <select id="userNumber" class="m-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+
+            <button type="submit">Gioca</button>
+        </form>
+
+        <p id="userResult"></p>
+        <p id="result"></p>
     </section>
 
 </body>
