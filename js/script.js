@@ -26,9 +26,9 @@ formPali.addEventListener('submit', function (e) {
     const risultato = document.getElementById('risultato');
 
     if (isPalindromo(parola)) {
-        risultato.textContent = 'La parola inserita è un palindromo.';
+        risultato.innerText = 'La parola inserita è un palindromo.';
     } else {
-        risultato.textContent = 'La parola inserita non è un palindromo.';
+        risultato.innerText = 'La parola inserita non è un palindromo.';
     }
 });
 
